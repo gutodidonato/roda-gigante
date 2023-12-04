@@ -20,8 +20,8 @@ body {
 
 .menu {
     position: relative;
-    width: 150px; /* Ajuste conforme necessário */
-    height: 150px; /* Ajuste conforme necessário */
+    width: 150px; 
+    height: 150px; 
     animation: rotateMenu 6s infinite linear;
 }
 
@@ -38,6 +38,7 @@ body {
     transition: background-color 0.3s ease;
     position: absolute;
     transform-origin: 50% 50%;
+    animation: rotateElements 6s infinite linear;
 }
 
 .item:hover {
@@ -61,4 +62,14 @@ body {
     to {
         transform: rotate(360deg);
     }
+}
+
+@keyframes rotateElements {
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+    
 }

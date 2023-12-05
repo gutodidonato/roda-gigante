@@ -209,3 +209,12 @@
         transform: rotate(-234deg);
     }
 }
+
+.corpo_menu:hover .item,
+.corpo_menu:hover .item .filho-item,
+.corpo_menu:hover .menu {
+    animation-play-state: paused;
+}
+
+
+

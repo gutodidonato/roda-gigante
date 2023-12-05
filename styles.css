@@ -24,13 +24,26 @@
     text-align: center;
 }
 
+.corpo_menu {
+        background-color: #ffffff;
+        width: 375px;
+        height: 375px;
+        position: relative;
+        background-image: url(./circulo.png);
+        background-size: 100%;
+        background-repeat: round;
+        margin-top: 150px;
+}
+
 .menu {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 0px;
     height: 0px;
     border-radius: 50%;
-    animation: rotateMenu 6s infinite linear;
-    margin-top: 300px;
+    animation: rotateMenu 12s infinite linear;
 }
 
 .item {
@@ -48,66 +61,61 @@
     transform-origin: 0% 0%; 
 }
 
-
-
 .item:hover {
-    background-color: #2980b9;
+    background-color: #2eb929;
 }
 
-.selected {
-    background-color: #2ecc71;
-}
 
-.item:nth-child(1) { transform: rotate(0deg) translateX(70px) rotate(-90deg); }
+.item:nth-child(1) { transform: rotate(0deg) translateX(150px) rotate(-90deg); }
 .item:nth-child(1) .filho-item { 
     background-color: #e74c3c;
-    animation: rotateElement1 6s infinite linear;
+    animation: rotateElement1 12s infinite linear;
 }
 
-.item:nth-child(2) { transform: rotate(36deg) translateX(70px) rotate(-90deg); }
+.item:nth-child(2) { transform: rotate(36deg) translateX(150px) rotate(-90deg); }
 .item:nth-child(2) .filho-item { 
     background-color: rgb(60, 231, 97);
-    animation: rotateElement2 6s infinite linear;
+    animation: rotateElement2 12s infinite linear;
 }
-.item:nth-child(3) { transform: rotate(72deg) translateX(70px) rotate(-90deg); }
+.item:nth-child(3) { transform: rotate(72deg) translateX(150px) rotate(-90deg); }
 .item:nth-child(3) .filho-item { 
     background-color: #473ce7;
-    animation: rotateElement3 6s infinite linear;
+    animation: rotateElement3 12s infinite linear;
 }
-.item:nth-child(4) { transform: rotate(108deg) translateX(70px) rotate(-90deg); }
+.item:nth-child(4) { transform: rotate(108deg) translateX(150px) rotate(-90deg); }
 .item:nth-child(4) .filho-item { 
     background-color: #3cc5e7;
-    animation: rotateElement4 6s infinite linear;
+    animation: rotateElement4 12s infinite linear;
 }
-.item:nth-child(5) { transform: rotate(144deg) translateX(70px) rotate(-90deg); }
+.item:nth-child(5) { transform: rotate(144deg) translateX(150px) rotate(-90deg); }
 .item:nth-child(5) .filho-item { 
     background-color: #e7cd3c;
-    animation: rotateElement5 6s infinite linear;
+    animation: rotateElement5 12s infinite linear;
 }
-.item:nth-child(6) { transform: rotate(180deg) translateX(70px) rotate(-90deg); }
+.item:nth-child(6) { transform: rotate(180deg) translateX(150px) rotate(-90deg); }
 .item:nth-child(6) .filho-item { 
     background-color: #e73cde;
-    animation: rotateElement6 6s infinite linear;
+    animation: rotateElement6 12s infinite linear;
 }
-.item:nth-child(7) { transform: rotate(216deg) translateX(70px) rotate(-90deg); }
+.item:nth-child(7) { transform: rotate(216deg) translateX(150px) rotate(-90deg); }
 .item:nth-child(7) .filho-item { 
     background-color: #e73c3c;
-    animation: rotateElement7 6s infinite linear;
+    animation: rotateElement7 12s infinite linear;
 }
-.item:nth-child(8) { transform: rotate(252deg) translateX(70px) rotate(-90deg); }
+.item:nth-child(8) { transform: rotate(252deg) translateX(150px) rotate(-90deg); }
 .item:nth-child(8) .filho-item { 
     background-color: #ffffff;
-    animation: rotateElement8 6s infinite linear;
+    animation: rotateElement8 12s infinite linear;
 }
-.item:nth-child(9) { transform: rotate(288deg) translateX(70px) rotate(-90deg); }
+.item:nth-child(9) { transform: rotate(288deg) translateX(150px) rotate(-90deg); }
 .item:nth-child(9) .filho-item { 
     background-color: #000000;
-    animation: rotateElement9 6s infinite linear;
+    animation: rotateElement9 12s infinite linear;
 }
-.item:nth-child(10) { transform: rotate(324deg) translateX(70px) rotate(-90deg); }
+.item:nth-child(10) { transform: rotate(324deg) translateX(150px) rotate(-90deg); }
 .item:nth-child(10) .filho-item { 
     background-color: #e7a33c;
-    animation: rotateElement10 6s infinite linear;
+    animation: rotateElement10 12s infinite linear;
 }
 
 @keyframes rotateMenu {
